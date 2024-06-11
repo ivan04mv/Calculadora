@@ -2,9 +2,10 @@
 #include <math.h>
 
 //En base a la estructura presente, crear las funciones correspondientes para cada operación
-
+float suma (float num1, float num2);
 float resta (float num1, float num2);
 float division (float num1, float num2);
+float multiplicacion (float num1, float num2);
 
 int main() {
 
@@ -23,9 +24,9 @@ int main() {
 
     switch (operador) {
         case '+':
-            printf("El resultado es: %.2f", num1 + num2);
+            printf("El resultado es: %.2f",suma (num1,  num2));
             break;
-        case '-':
+        case '-':   
             printf("El resultado es: %.2f",resta (num1, num2));
             break;
         case '*':
@@ -42,6 +43,12 @@ int main() {
     return 0;
 }
 
+//DESARROLLADO POR GERARDO 24110103
+
+float suma(float num1, float num2){
+    return num1 + num2;
+}
+
 //DESARROLLADO POR OWELL 24110100
 float resta(float num1, float num2){
         return num1 - num2;
@@ -51,5 +58,3 @@ float resta(float num1, float num2){
 float division (float num1, float num2){
     return num1 / num2; 
 }
-// Definición de funciones
-// Aquí van las definiciones de las funciones de la calculadora
