@@ -1,18 +1,48 @@
 #include <stdio.h>
+#include <math.h>
 
 // Declaración de funciones
 // Aquí van las declaraciones de las funciones
 
 int main() {
-    // Declaración de variables
-    // Aquí van las variables necesarias para la entrada de datos
 
-    // Entrada de los números y el operador
+    float num1, num2;
+    char operador;
 
-    // Selección de la operación según el operador ingresado
+    do
+    {
+        printf("\t\nCALCULADORA LOS BANDIDOS\t\n");
+    printf("Ingrese el primer número: ");
+    scanf("%f", &num1);
+    printf("Ingrese el operador: ");
+    scanf("%s", &operador);    
+    printf("Ingrese el segundo número: ");
+    scanf("%f", &num2);
 
-    // Mostrar el resultado de la operación
-
+    switch (operador) {
+        case '+':
+            printf("El resultado es: %f", num1 + num2);
+            break;
+        case '-':
+            printf("El resultado es: %f", num1 - num2);
+            break;
+        case '*':
+            printf("El resultado es: %f", num1 * num2);
+            break;
+        case '/':
+            printf("El resultado es: %f", num1 / num2);
+            break;
+        case '^':
+            printf("El resultado es: %f", pow(num1, num2));
+            break;
+        case '%':
+            printf("El resultado es: %f", fmod(num1, num2));
+            break;
+        default:
+            printf("Operador inválido");
+            break;
+    }
+    } while (operador !=4);
     return 0;
 }
 
