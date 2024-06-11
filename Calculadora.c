@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
-// Declaración de funciones
-// Aquí van las declaraciones de las funciones
+//En base a la estructura presente, crear las funciones correspondientes para cada operación
 
 int main() {
 
