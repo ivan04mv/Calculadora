@@ -4,6 +4,7 @@
 //En base a la estructura presente, crear las funciones correspondientes para cada operación
 
 float resta (float num1, float num2);
+float division (float num1, float num2);
 
 int main() {
 
@@ -31,7 +32,7 @@ int main() {
             printf("El resultado es: %f", num1 * num2);
             break;
         case '/':
-            printf("El resultado es: %f", num1 / num2);
+            printf("El resultado es: %f", division (num1, num2));
             break;
         default:
             printf("Operador inválido");
@@ -41,10 +42,14 @@ int main() {
     return 0;
 }
 
-//DESARROLLADO POR OWELL 
+//DESARROLLADO POR OWELL 24110100
 float resta(float num1, float num2){
         return num1 - num2;
     }
 
+//DESARROLLADO POR IVAN 24110101
+float division (float num1, float num2){
+    return num1 / num2; 
+}
 // Definición de funciones
 // Aquí van las definiciones de las funciones de la calculadora
